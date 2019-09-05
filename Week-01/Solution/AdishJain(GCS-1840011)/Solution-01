@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+    long int n1=1,n2=0,i;
+    long long int max,min,temp,pro;
+	while(t--)
+	{
+        max=-30000;
+        min=30000;
+	    cin>>n1;
+	    for(i=0;i<n1;i++)
+	    {
+	        cin>>temp;
+	        if(temp>=max)
+	            max=temp;
+	    }
+	    cin>>n2;
+	    for(i=0;i<n2;i++)
+	    {   cin>>temp;
+	        if(temp<min)
+	            min=temp;
+	    }
+	    pro=max*min;
+	    cout<<pro<<endl;
+	}
+	return 0;
+}
